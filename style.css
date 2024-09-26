@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    /* overflow-y: hidden; */
+    
+
+}
+a{
+    text-decoration: none;
+    color:azure;
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+    padding-right: 2rem;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 80px;
+    background: rgb(110,192,213);
+    background: linear-gradient(90deg, rgba(110,192,213,1) 32%, rgba(32,125,180,1) 100%);
+position: relative;
+}
+
+#nav_list{
+    width: 100%;
+    
+    display: flex;
+    list-style: none;
+    font-size: 2.5rem;
+   justify-content: space-around;
+   padding: 15px;
+}
+
+   
+   /* margin-left: 30px;
+   margin-right: 15px; */
+
+
+#nav_logo{
+    color: white;   
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+#nav_items{
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+.footer_box{
+    width: 100%;
+    gap: 1rem;
+   
+    min-height: 40px;
+    text-align: center;
+
+    background: rgb(110,192,213);
+    background: linear-gradient(90deg, rgba(110,192,213,1) 32%, rgba(32,125,180,1) 100%);
+
+    
+
+}
+.footer_box p{
+    font-size: 2rem;
+    color:azure;
+    margin-bottom: 50px;
+}
+.container_box{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+    overflow-x: hidden;
+    
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right_box{
+    position: relative;
+    overflow: hidden;
+    transition: all 1.6s linear 0s;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 20px;
+ 
+     height: 100%; 
+}
+.right_box img{ 
+    height: 100%;
+    width: 400px;
+ border-radius: 20px;
+
+    
+
+ }
+.right_box:hover{
+    transform: scale(1.1);
+    transition: all 1.6s linear 0s;
+
+}
+
+.left_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#item_h2{
+    font-size: 30px;
+}
+.left_box h2{
+    font-size: 2rem;
+}
+.ing_box{
+    font-size: 1.2rem;
+    /* font-weight: 300; */
+}
+.recipe_box{
+    font-size: 1.2rem;
+    /* font-weight: 300; */
+}
+
+.right_box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(37, 34, 34, 0.729);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 20px;
+    transition: all 0.3s linear 0s;
+
+}
+.right_box .overlay{
+    color: white;
+    font-size: 1.2rem;
+}
+.right_box:hover .overlay{
+    opacity: 1;
+
+}
